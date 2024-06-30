@@ -1,14 +1,9 @@
-const removeFromArray = function(anArray, toRem) {
-    for (let i = 0; i < anArray.length; i++) {
-        if (anArray[i] == toRem) {
-            anArray.splice(i, 1);
-        }
-        else {
-            continue;
-        }
-    }
-    return anArray;
-};
+const removeFromArray = function(arr, ...args) {
+    let a = arr;
+    let b = args;
+    let c = a.filter(d => !b.includes(d));
+    return c;
+  };
 
 // Do not edit below this line
 module.exports = removeFromArray;
