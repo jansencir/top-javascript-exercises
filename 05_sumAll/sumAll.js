@@ -1,6 +1,17 @@
 const sumAll = function(value1, value2) {
     let finalVal = 0;
-    for (i = value1; i <=value2; i++) {
+    let smlVal;
+    let bigVal;
+
+    if (value1 < value2) {
+        smlVal = value1;
+        bigVal = value2;
+    } else {
+        smlVal = value2;
+        bigVal = value1;   
+    }
+    
+    for (i = smlVal; i <= bigVal; i++) {
         finalVal += i;
     }
     return finalVal;
