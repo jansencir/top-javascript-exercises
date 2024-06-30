@@ -1,4 +1,8 @@
 const sumAll = function(value1, value2) {
+    if (value1 < 0 || value2 < 0) {
+        return "ERROR";
+    }
+
     let finalVal = 0;
     let smlVal;
     let bigVal;
