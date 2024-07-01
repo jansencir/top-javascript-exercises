@@ -5,6 +5,9 @@ const convertToCelsius = function(f) {
 };
 
 const convertToFahrenheit = function(c) {
+  let far = (c * (9/5)) + 32;
+  let farRounded = Math.round(far * 10) / 10;
+  return farRounded;
 };
 
 // Do not edit below this line
