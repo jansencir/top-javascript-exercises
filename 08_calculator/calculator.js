@@ -30,8 +30,16 @@ const power = function(a, b) {
   return a ** b;
 };
 
-const factorial = function() {
-	
+const factorial = function(a) {
+  let total = 1;
+	if (a == 0) {
+    total = 1;
+  } else {
+    for (let i = a; i > 0; i--) {
+      total *= i;
+    }
+  }
+  return total;
 };
 
 // Do not edit below this line
