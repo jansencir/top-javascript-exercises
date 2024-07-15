@@ -8,8 +8,8 @@ const subtract = function(c, d) {
 
 const sum = function(arr) {
   let total = 0;
-  for (i in arr) {
-    total += i;
+  for (let i in arr) {
+    total += arr[i];
   }
   return total;
 };
