@@ -1,6 +1,8 @@
 const fibonacci = function(num) {
     if (num == 0) {
         return 0;
+    } if (num < 0) {
+        return "OOPS";
     } else {
     let fibArray = [1, 1];
     for (let i = 1; i < num-1; i++) {
