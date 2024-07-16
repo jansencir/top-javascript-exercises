@@ -1,17 +1,14 @@
 const palindromes = function (string) {
-    let reverseString = "";
-    for (let i = string.length -1; i >= 0; i--) {
-        reverseString += string[i];
-    }    
-    return string == reverseString;
+    // const chars = "abcdefghijklmnopqrstuvwxyz";
+    reverseString = string.split("").reverse().join("");
+    return string === reverseString;
 };
 
 /* pseudocode
     -take a string as a parameter
-    -compare the string to the reversed string
-        -turn it into an array, split
-        -reverse the array, reverse
-        -join it back together, join
+    -make a variable of lowercase letters
+    -make a new string of just the lowercase letters
+    -compare the new string with its reversed version
 */
 
 // Do not edit below this line
