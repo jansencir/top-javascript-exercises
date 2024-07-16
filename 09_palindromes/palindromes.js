@@ -1,7 +1,15 @@
 const palindromes = function (string) {
-    // const chars = "abcdefghijklmnopqrstuvwxyz";
-    reverseString = string.split("").reverse().join("");
-    return string === reverseString;
+    const chars = "abcdefghijklmnopqrstuvwxyz";
+    let cleanString = string
+        .toLowerCase() 
+        .split("")
+        .filter(char => chars.includes(char))
+        .join("");
+    let reverseString = cleanString
+        .split("")
+        .reverse()
+        .join("");
+    return cleanString === reverseString;
 };
 
 /* pseudocode
